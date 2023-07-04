@@ -6,7 +6,7 @@ Router.post('/adduser',adduser)
 Router.get('/getAllUsers',getAllUsers)
 Router.get('/getUserById/:id',getUserById)
 Router.get('/getbyage',getUserByage)
-Router.put('/updateUser/:id',updateUser)
+Router.put('/updateUser/:name',updateUser)
 Router.delete('/deleteUser/:id',deleteUser)
 
 module.exports=Router
