@@ -51,7 +51,7 @@ const getUserByage=async(req,res)=>{
 // update
 const updateUser=async(req,res)=>{
     try {
-        const User= await user.findOneAndUpdate({id:req.params.id},{$set:{name:req.body.name}})
+        const User= await user.findOneAndUpdate({name:req.params.name},{$set:{name:req.body.name}})
         return res.json(User)
     } catch (error) {
         return res.json(error.message) 
